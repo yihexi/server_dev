@@ -13,3 +13,4 @@ ADD nickdir.tar.gz .
 从 url 拷贝文件到镜像中。但是在 docker [官方文档的最佳实践](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#add-or-copy)中却强烈建议不要这么用！！
 
 在使用 COPY 和 ADD 命令时，我们可以通过一些技巧来加速镜像的 build 过程。比如把那些最不容易发生变化的文件的拷贝操作放在较低的镜像层中，这样在重新 build 镜像时就会使用前面 build 产生的缓存
+
